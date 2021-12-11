@@ -1,0 +1,468 @@
+*{  box-sizing: border-box;
+
+}
+
+
+@font-face {
+  font-family: header;
+  src: url(elliniaclm-lightitalic-webfont.ttf);
+}
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #D4B897;
+
+  }
+  
+  .policy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    align-items: center;text-align: center;
+    /* background-color: #BBB; */
+  }
+  
+  /** Main grid - ALL PAGE **/
+  .grid-container {
+    display: grid;
+    /* background-image: url("leaf.jfif"); */
+    text-align: right;
+  }
+  
+  
+  body {
+    font-family: header;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-image: url("leaf.jfif"); 
+  }
+  
+  
+  .header {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    ' connected connected connected bar-chart bar-chart  bar-chart ' ; 
+  }
+  
+  
+  
+ /*bubble menu*/
+
+.bar-chart {
+    -webkit-font-smoothing: antialiased;
+    width:50vw; 
+    grid-area: bar-chart;
+    }
+    
+    .bar-chart ul {
+    list-style: none;
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100vw;
+    }
+    
+    .bar-chart li {
+    float: left;
+    margin-right: -10px;
+    margin-top: -50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0. ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .bar-chart li:hover {
+    margin-top: 0px;
+    }
+    
+    .bar-chart li a {
+    background: #D4B897 ;
+    font-family: header;
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 50%;
+    width: 120px;
+    height: 80px;
+  
+    padding: 60px 20px 55px 20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -moz-box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+    -webkit-box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+    }
+    
+    .bar-chart li:hover a {
+    padding: 36px 20px 60px 20px;
+    }
+  
+  
+  /**************************************************LOGIN STYLING***********************************************************/
+  
+  
+  
+  .logInBotton{
+      height: 50px;
+      width: 100px;
+      position:fixed;
+      margin:8px;
+      border: solid black;
+      font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  /************************************************************** grid #1 (main grid)*******************************************************************/
+  .grid-container-main{
+    display: grid;
+    color: #fefefe;
+    margin-top: 100px;
+    background-color:rgba(78, 157, 177, 0.75);
+    height:auto;
+    grid-template-columns: 2fr 1fr;
+  
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:2 ;
+    grid-row-end:3 ;
+  
+  }
+  
+  .body_main{
+      background-image: url("leaf.jfif") hidden; /* Hide horizontal scrollbar */}
+  
+  
+  .head-text-main h1 {
+    text-align: left;
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:1 ;
+    grid-row-end:1 ;
+    font-size: 60px;   
+   
+  }
+  
+  .text-main{
+    text-align: left;
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+    font-size: 18px; 
+  }
+  
+  .textExample{
+      text-align: left;
+      margin-left: 80px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start:2 ;
+      grid-row-end:2 ;
+      font-size: 18px; 
+    }
+  
+  
+  textarea {
+      display: block;
+      border: 1px solid #BBB;
+      color: #444;
+      font-size: 110%;
+       display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+    
+    button {
+      margin-top: 10px;
+    }
+    Summary
+  
+  .img-main{
+    text-align: center;
+    margin-right: 220px;
+    margin-top: -40px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+  }
+  
+  
+  .main-1 {
+    background-color: #23D2;
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3 ;
+    grid-row-end:3 ;
+    
+  }
+  
+  .main-2 {
+    background-color: #23D2;
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:4 ;
+    grid-row-end:4 ;
+  }
+  
+  .main-3 {
+    background-color: #23D2;
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:5 ;
+    grid-row-end:5 ;
+    direction: rtl;
+  
+  }
+  
+  
+  /********************************************************************* grid #2 (Trending items)****************************************************************************/
+  
+  .grid-container-trending-items{
+   text-align: center;
+   /* margin-top:100px;*/
+    width: 100%;
+    height:fit-content;
+    
+    display: grid;
+    color: #414242;
+    background-color: rgba(255, 255, 255, 0.9);
+       grid-template-columns: 1fr 1fr 1fr ; 
+  
+    grid-column-start:1;
+    grid-column-end: 1;
+    grid-row-start:4 ;
+    grid-row-end:4 ;
+  /* 
+    grid-template-areas: 
+      ' text-trending-items text-trending-items'
+      'item2 item2 item3 item3 item4 item4' ; */
+  }
+  
+  .text-trending-items {
+    margin-top: 40px;
+  
+    /****for centring***/
+    
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start:1 ;
+      grid-row-end:2 ;
+  
+  }
+  
+  
+  
+  .item3 {
+  
+    /****for centring***/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  
+     grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:1 ;
+    grid-row-end:4 ; 
+    direction: rtl;
+  }
+  
+  
+  
+  
+  
+  /*********************************************************************************FOOTER STYLING****************************************************************************************/
+ /*FOOTER */
+
+.footer {
+    
+    grid-column-start: 1;
+   grid-column-end: 1; 
+ }
+ 
+ .footer-distributed{
+     background: #D4B897;
+     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+     box-sizing: border-box;
+     width: 100%;
+     font: bold 16px header;
+     text-align: center;
+     overflow: hidden;
+   padding-top: 3vh;
+   padding-left: 5vw;
+ }
+ section {
+   width: 100%;
+   display: inline-block;
+   background: #ccc;
+   height: 60vh;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 700;
+   text-decoration: underline;
+ }
+ .footer-distributed .footer-left{
+     float: center;
+ }
+ .footer-distributed h3{
+     color:  #ffffff;
+     font: normal 36px header;
+     margin: 0 0 10px;
+ }
+ .footer-distributed h3 span{
+   font: normal 36px header;
+     color:  #5383d3;
+ }
+ .footer-distributed .footer-links{
+     color:  #ffffff;
+     margin: 0 0 10px;
+     padding: 0;
+ }
+ 
+ .footer-distributed .footer-links a{
+     display:inline-block;
+     line-height: 1.8;
+     text-decoration: none;
+     color:  inherit;
+ }
+ 
+ .footer-distributed .footer-company-name{
+     color:  #8f9296;
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0;
+ }
+ 
+ .footer-distributed .follow{
+     color:  #e8edf3;
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0;
+ }
+ 
+ /* Footer social icons */
+ 
+ .footer-distributed .footer-icons{
+     margin-top: 20px;
+   margin-bottom: 20px;
+ }
+ 
+ .footer-distributed .footer-icons a{
+     display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color:  #33383b;
+     border-radius: 100%;
+ 
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+ 
+     margin-right: 3px;
+     margin-bottom: 5px;
+ }
+ 
+ /*minimize*/
+ 
+ @media (max-width: 600px) {
+ 
+    .bar-chart li a {
+        background: rgb(193, 154, 107);
+        font-family: header;
+        font-size: 70%;
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+        text-align: center;
+        display: block;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 50%;
+        width: 70px;
+        height: 50px;
+        padding: 50px 20px 32px 20px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -moz-box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+        -webkit-box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+        box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+        }
+        
+        .bar-chart li:hover a {
+        padding: 18px 10px 30px 10px;
+        }
+      
+        .bar-chart {
+          -webkit-font-smoothing: antialiased;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
+          
+          }
+          .connected{
+            background-color: rgb(206,139,84);
+            color: white;
+            border-radius: 15px;
+            cursor: pointer;
+             width: 7vh;
+             height:3vh;  
+             text-align: center;
+            /* height: 30px; */
+            border: solid rgba(131,80,46);
+            margin-top: 0vh;
+            margin-left: 0vh;
+            font-size: 50%;     
+            grid-area:connected;
+            font-family: header;
+             position: center;
+            
+          }
+          .Heading{
+            font-size: 50px;
+          }
+         
+    
+      }

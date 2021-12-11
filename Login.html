@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+ 
+        <meta charset="UTF-8">
+              <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="Login.css">
+        <script src= 'OurHome.js'></script> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+                 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+
+</head>
+<body>
+  
+    <div class="grid-container">
+        <div class="header">
+                       
+          <div class="bar-chart">
+            <ul>
+              <li>
+                <a href="contact.html">צור קשר</a>
+              </li>
+              <li>
+                <a href="ShoppingCart.html">עגלת קניות</a>
+              </li>
+              <li>
+                <a href="kit.html">DIY ערכות</a>
+              </li>
+              <li>
+                <a href="ItemList.html">מוצרים להשכרה</a>
+              </li>
+              <li>
+                <a href="Home.html">עמוד הבית</a>
+              </li>
+    
+            </ul>
+          </div> 
+                          
+        </div>
+
+                        
+         
+                           <br><br><br><br> <div class="container" >
+                              
+
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                                הזינו שם משתמש <br>
+                                 <input type="text" id="username" name="fname" placeholder="כתובת מייל"> <br>
+                                 הזינו ססמא <br>
+                                 <input type="text" id="passcode" name="fname2" placeholder="ססמתכם הסודית" minlength="8"><br>
+                                <input type="submit" value="שלח"> <br>
+                                <br>
+                                </form>
+                                 </div>
+
+                              <!-----------Footer----------------->
+
+                              <div class="footer">
+                                <footer class="footer-distributed">
+                        
+                                    <div class="footer-left">
+                              
+                                      <h3>AllRenty<span>Shop</span></h3>
+                              
+                                      <p class="footer-links">
+                                        <a href="Home.html">עמוד הבית</a>
+                                        ·
+                                        <a href="contact.html">יצירת קשר</a>
+                                        ·
+                                        
+                                        <a href="Policy.html">תנאי השימוש</a>
+                                      </p>
+                              
+                                      <p class = "follow">:עקבו אחרינו </p>
+                              
+                                      <div class="footer-icons">
+                    
+                                       <a target="_blank" href="https://www.facebook.com/Allrenty-112864887293394/"><i class="fa fa-facebook"></i></a>
+                                        <a target="_blank" href="https://twitter.com/allrent"><i class="fa fa-twitter"></i></a>
+                                        <a target="_blank" href="https://www.instagram.com/allrenty_co/"><i class="fa fa-instagram"></i></a>
+                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=allrenty&text=&source=&data="><i class="fa fa-whatsapp"></i></a>
+                                        <br><br>
+                                        <p class="footer-company-name">AllRenty © 2021</p><br>
+                    
+                                      </div>
+                              
+                                    </div>
+                              
+                          </div>    
+
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="javascripts/RelatedJavaScript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Style inputs with type="text", select elements and textareas */
+* {
+    text-align: center
+}
+
+@font-face {
+    font-family: header;
+    src: url(elliniaclm-lightitalic-webfont.ttf);
+  }
+
+input[type=text], select, textarea {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: header;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(206,139,84);
+  color: white;
+  border-radius: 15px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 10%;
+  height: 5vh;
+  border: solid rgba(131,80,46);
+  font-family: header;
+   font-size: 90%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(204, 103, 35);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: right;
+}
+
+#username {
+  text-align: right;
+font-family: header;
+}
+
+#passcode{
+  text-align: right;
+  font-family: header;
+
+}
