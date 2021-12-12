@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   display: grid;
   grid-template-areas: 
-  ' connected connected bar-chart bar-chart bar-chart ' ; 
+  ' connected connected connected bar-chart bar-chart  bar-chart ' ; 
 }
 
 .Header{
@@ -234,18 +234,17 @@ body {
       color: white;
       border-radius: 15px;
       cursor: pointer;
-      width: 60%;
-      height: 60%;
+       width: 10vh;
+       height:7vh; 
        text-align: center;
+      /* height: 30px; */
       border: solid rgba(131,80,46);
-      margin-top: -3vh;
-      margin-left: 3vh;
-      /* margin-right: -100vh; */
-      /* position: left; */
-      /* float: left; */
-      grid-area:connected; 
-        /* grid-column-start: 1;
-  grid-column-end: 3; */
+      margin-top: 0vh;
+      margin-left: 0vh;
+      grid-area:connected;
+      font-family: header;
+       position: center;
+       font-size: 70%;
     }
 
 /*bubble menu*/
@@ -534,10 +533,10 @@ section {
          text-align: center;
         border: solid rgba(131,80,46);
         margin-top: 0vh;
-        margin-left: 0vh;
+        margin-left: 0vw;
         grid-area:connected;
         font-family: header;
-         position: center;
+         
          font-size: 50%;
       }
       .Heading{

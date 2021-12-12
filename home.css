@@ -51,7 +51,7 @@ body {
   color: white;
   border-radius: 15px;
   cursor: pointer;
-  width: 60%;
+  width: 50%;
   height: 60%;
    text-align: center;
   border: solid rgba(131,80,46);
@@ -64,7 +64,7 @@ body {
     color: white;
     border-radius: 15px;
     cursor: pointer;
-    width: 60%;
+    width: 50%;
     height: 60%;
      text-align: center;
     border: solid rgba(131,80,46);

@@ -1,18 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
- 
- 
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="home.css">
-        <link rel="stylesheet" href="contact.css">
-        <script src= 'OurHome.js'></script> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
 
-                 
+<head>
+
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="contact.css">
+  <script src='OurHome.js'></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script>
@@ -23,111 +23,116 @@
         return false;
       }
     }
-    </script>
+  </script>
 </head>
+
 <body>
-  
-    <div class="grid-container">
-      <div class="header">
+
+  <div class="grid-container">
+    <div class="header">
+      <ul>
+        <button class="connected" onclick="document.location='home.html'">התנתקות</button>
+        <!-- <button class="login" onclick="document.location='login.html'" >התחברות</button> -->
+      </ul>
+
+
+      <div class="bar-chart">
         <ul>
-              <button class="connected"  onclick="document.location='sign up.html'" >הרשמה</button>
-              <button class="login" onclick="document.location='login.html'" >התחברות</button>
+          <li>
+            <a href="contact.html">צור קשר</a>
+          </li>
+          <li>
+            <a href="ShoppingCart.html">עגלת קניות</a>
+          </li>
+          <li>
+            <a href="kit.html">DIY ערכות</a>
+          </li>
+          <li>
+            <a href="ItemList.html">מוצרים להשכרה</a>
+          </li>
+          <li>
+            <a href="Home.html">עמוד הבית</a>
+          </li>
+
         </ul>
-             
-             
-              <div class="bar-chart">
-                <ul>
-                  <li>
-                    <a href="contact.html">צור קשר</a>
-                  </li>
-                  <li>
-                    <a href="ShoppingCart.html">עגלת קניות</a>
-                  </li>
-                  <li>
-                    <a href="kit.html">DIY ערכות</a>
-                  </li>
-                  <li>
-                    <a href="ItemList.html">מוצרים להשכרה</a>
-                  </li>
-                  <li>
-                    <a href="Home.html">עמוד הבית</a>
-                  </li>
-        
-                </ul>
-              </div>
-             
-            </div>
-                     
-                           <br><br><br><br> <div class="container", >
-                                <form action="action_page.php">
-                              
-                                  <label for="fname">שם פרטי</label><br>
-                                  <input type="text" id="first" name="firstname" placeholder="שמך הפרטי" pattern="[A-Za-z, ]{2,}"> <br>
-                              
-                                  <label for="lname">שם משפחה</label><br>
-                                  <input type="text" id="last" name="lastname" placeholder="שם המשפחה שלך" pattern="[A-Za-z, ]{2,}"><br>
+      </div>
 
-                                  <label for="lname">כתובת מייל</label><br>
-                                  <input type="text" id="mail" name="email" placeholder="כתובת המייל שלכם"><br>
-                              
-                                  <label for="Category">קטגוריה</label> <br>
-                                  <select id="Category" name="Category">
-                                    <option value="Complaint" id="complaint">תלונה על מוצר</option>
-                                    <option value="Phone" id="phone">אין מענה טלפוני</option>
-                                    <option value="Praise" id="jobs">מחפשים עבודה בחנות</option>
-                                    <option value="Career" id="thanks"> מעוניינים להודות על השירותים שלכם</option>
+    </div>
 
-                                  </select><br>
-                              
-                                  <label for="subject">תוכן ההודעה</label><br>
-                                  <textarea id="subject" name="subject" placeholder="כתבו את הודעתכם" style="height:200px"></textarea><br>
-                              
-                                  <input type="submit" value="שלח">
-                              
-                                </form>
-                              </div>
+    <br><br><br><br>
+    <div class="container" ,>
+      <form action="action_page.php">
 
-                              <!-----------Footer----------------->
+        <label for="fname">שם פרטי</label><br>
+        <input type="text" id="first" name="firstname" placeholder="שמך הפרטי" pattern="[A-Za-z, ]{2,}"> <br>
 
-                              <div class="footer">
-                                <footer class="footer-distributed">
-                        
-                                    <div class="footer-left">
-                              
-                                      <h3>AllRenty<span>Shop</span></h3>
-                              
-                                      <p class="footer-links">
-                                        <a href="Home.html">עמוד הבית</a>
-                                        ·
-                                        <a href="contact.html">יצירת קשר</a>
-                                        ·
-                                        
-                                        <a href="Policy.html">תנאי השימוש</a>
-                                      </p>
-                              
-                                      <p class = "follow">:עקבו אחרינו </p>
-                              
-                                      <div class="footer-icons">
-                    
-                                       <a target="_blank" href="https://www.facebook.com/Allrenty-112864887293394/"><i class="fa fa-facebook"></i></a>
-                                        <a target="_blank" href="https://twitter.com/allrent"><i class="fa fa-twitter"></i></a>
-                                        <a target="_blank" href="https://www.instagram.com/allrenty_co/"><i class="fa fa-instagram"></i></a>
-                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=allrenty&text=&source=&data="><i class="fa fa-whatsapp"></i></a>
-                                        <br><br>
-                                        <p class="footer-company-name">AllRenty © 2021</p><br>
-                    
-                                      </div>
-                              
-                                    </div>
-                              
-                          </div>  
+        <label for="lname">שם משפחה</label><br>
+        <input type="text" id="last" name="lastname" placeholder="שם המשפחה שלך" pattern="[A-Za-z, ]{2,}"><br>
+
+        <label for="lname">כתובת מייל</label><br>
+        <input type="text" id="mail" name="email" placeholder="כתובת המייל שלכם"><br>
+
+        <label for="Category">קטגוריה</label> <br>
+        <select id="Category" name="Category">
+          <option value="Complaint" id="complaint">תלונה על מוצר</option>
+          <option value="Phone" id="phone">אין מענה טלפוני</option>
+          <option value="Praise" id="jobs">מחפשים עבודה בחנות</option>
+          <option value="Career" id="thanks"> מעוניינים להודות על השירותים שלכם</option>
+
+        </select><br>
+
+        <label for="subject">תוכן ההודעה</label><br>
+        <textarea id="subject" name="subject" placeholder="כתבו את הודעתכם" style="height:200px"></textarea><br>
+
+        <input type="submit" value="שלח">
+
+      </form>
+    </div>
+
+    <!-------Footer-------->
+
+    <div class="footer">
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+          <h3>AllRenty<span>Shop</span></h3>
+
+          <p class="footer-links">
+            <a href="Home.html">עמוד הבית</a>
+            ·
+            <a href="contact.html">יצירת קשר</a>
+            ·
+
+            <a href="Policy.html">תנאי השימוש</a>
+          </p>
+
+          <p class="follow">:עקבו אחרינו </p>
+
+          <div class="footer-icons">
+
+            <a target="_blank" href="https://www.facebook.com/Allrenty-112864887293394/"><i
+                class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/allrent"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/allrenty_co/"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=allrenty&text=&source=&data="><i
+                class="fa fa-whatsapp"></i></a>
+            <br><br>
+            <p class="footer-company-name">AllRenty © 2021</p><br>
+
+          </div>
+
+        </div>
+
+    </div>
 
 
-</div>
+  </div>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="javascripts/RelatedJavaScript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="javascripts/RelatedJavaScript.js"></script>
 
-  </body>
+</body>
+
 </html>

@@ -112,37 +112,25 @@ body {
     border: solid rgba(131,80,46);
    }
    
-   .login{
+  
+  .connected{
     background-color: rgb(206,139,84);
     color: white;
     border-radius: 15px;
     cursor: pointer;
-    width: 60%;
-    height: 60%;
+     width: 10vh;
+     height:7vh; 
      text-align: center;
+    /* height: 30px; */
     border: solid rgba(131,80,46);
     margin-top: 0vh;
-    margin-left: 3vh;
-    grid-area:login; 
+    margin-left: 0vh;
+    grid-area:connected;
+    font-family: header;
+     position: center;
+     font-size: 70%;
+    
   }
-    .connected{
-      background-color: rgb(206,139,84);
-      color: white;
-      border-radius: 15px;
-      cursor: pointer;
-      width: 60%;
-      height: 60%;
-       text-align: center;
-      border: solid rgba(131,80,46);
-      margin-top: -3vh;
-      margin-left: 3vh;
-      /* margin-right: -100vh; */
-      /* position: left; */
-      /* float: left; */
-      grid-area:connected; 
-        /* grid-column-start: 1;
-  grid-column-end: 3; */
-    }
 
 /*bubble menu*/
 
@@ -376,8 +364,8 @@ section {
         color: white;
         border-radius: 15px;
         cursor: pointer;
-         width: 7vh;
-         height:3vh; 
+         width: 8vh;
+         height:7vh; 
          text-align: center;
         /* height: 30px; */
         border: solid rgba(131,80,46);
@@ -386,11 +374,13 @@ section {
         grid-area:connected;
         font-family: header;
          position: center;
-         font-size: 50%;
+         font-size: 70%;
         
       }
+   
       .Heading{
         font-size: 50px;
+        width: 100%;
       }
      
 
