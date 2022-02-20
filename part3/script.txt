@@ -1,0 +1,85 @@
+USE web_project_g3;
+DROP TABLE Users;
+CREATE TABLE Users (
+  id int auto_increment primary key,
+  Full_Name varchar(255),
+  email text,
+  address text,
+  phone varchar(50),
+  password varchar(120),
+  create_date timestamp default CURRENT_TIMESTAMP,
+  type varchar(50) default "user"
+);
+
+DROP TABLE Products;
+CREATE TABLE Products (
+    id int auto_increment primary key,
+    name varchar(150),
+    description text,
+    price int,
+    product_image varchar(400),
+    quantity int
+);
+
+DROP TABLE Kit;
+CREATE TABLE Kit (
+    id int auto_increment primary key,
+    description text,
+    price int,
+    kit_image varchar(400),
+    type varchar(10),
+    quantity int
+);
+ALTER TABLE Kit AUTO_INCREMENT=100;
+
+DROP TABLE ShoppingCart;
+CREATE TABLE ShoppingCart (
+    product_ID int auto_increment not null ,
+    user_email varchar (50),
+    product_Name varchar(150),
+    price int,
+    quantity int default 1,
+    total_price int default (price),
+    image varchar(400),
+    inventory_quantity int default 0,
+
+    CONSTRAINT PK_ShoppingCart PRIMARY KEY (product_ID, user_email)
+);
+
+DROP TABLE Orders;
+CREATE TABLE Orders (
+    id int auto_increment primary key,
+    payer_email text not null,
+    order_Cost int not null,
+    order_Date timestamp default CURRENT_TIMESTAMP
+);
+ALTER TABLE Orders AUTO_INCREMENT=12457;
+
+DROP TABLE Contact;
+CREATE TABLE Contact (
+    id int auto_increment primary key,
+    first_Name varchar(50) not null,
+    last_Name varchar (50),
+    email varchar (50) not null,
+    complaint_Category varchar(50) not null,
+    message varchar(400) not null
+);
+
+
+INSERT INTO products(name ,  description, price,  product_image, quantity) VALUES ('מקדחה'  ,'כלי עבודה שתפקידו ליצור חורים בחומרים קשים','8',  'images/drill.jpeg', '5');
+INSERT INTO products(name ,  description, price,  product_image, quantity) VALUES ('פטיש'  ,'כלי עבודה המשמש להכות מוצק לתוך חומר אחר','7',  'images/hammer.jpeg', '4');
+INSERT INTO products(name ,  description, price,  product_image, quantity) VALUES ('מסור ידני'  ,'כלי עבודה ידני שבאמצעותו חותכים חומרים שונים', '8', 'images/saw.jpg', '2');
+INSERT INTO products(name ,  description, price,  product_image, quantity) VALUES ('מברג'  ,'כלי עבודה שתפקידו להדק, לשחרר ולהחדיר ברגים','8',   'images/screwdriver2.jpg', '8');
+INSERT INTO products(name ,  description, price, product_image, quantity) VALUES ('את חפירה'  ,'כלי חפירה ידני המשמש בחקלאות, בבניין, ועוד','7',   'images/shovel2.jpg', '10');
+INSERT INTO products(name ,  description, price,  product_image, quantity) VALUES ('מגרפה'  ,'כלי לעיבוד אדמה וניקוי עלים, דשא, חציר ועוד','8',   'images/rake.png', '0');
+
+
+INSERT INTO kit(description, price, kit_image, type, quantity) VALUES ('טרריום תפזורת עציצים כולל כלל הציוד הנדרש','70', 'images/terarium.jfif', 'pro1', '2');
+INSERT INTO kit(description, price, kit_image, type, quantity) VALUES ( 'נענע, שיבא ובזיליקום- עציצי עשבי תיבול','50','images/herbs.jfif', 'pro1', '3');
+INSERT INTO kit(description, price, kit_image, type, quantity) VALUES ('מארז לילדים בגילאי 6+ ליצירה חוויתית','50','images/childrens.jpg', 'pro1', '4');
+INSERT INTO kit(description, price, kit_image, type, quantity) VALUES ('מקרמה ירח תלוי- כולל הוראות הרכבה','70', 'images/moon.jpg', 'pro2', '7');
+INSERT INTO kit(description, price, kit_image, type, quantity) VALUES ('מקרמה קיר מחורז- כולל הוראות הרכבה','50', 'images/kit.jfif', 'pro2', '10');
+INSERT INTO kit(description, price, kit_image, type, quantity) VALUES ('מקרמה עציץ תלוי- כולל הוראות הרכבה','50', 'images/smallmacrame.jpg', 'pro2', '0');
+
+INSERT INTO users(Full_Name, email, address, phone, password,type) VALUES ('Dina Moran','dina@gmail.com', 'חיים 15', '0574136845','12345678','admin');
+INSERT INTO users(Full_Name, email, address, phone, password,type) VALUES ('Carmit Chanan','carmit@gmail.com', 'לוי 8', '0574789845','87654321','admin');
